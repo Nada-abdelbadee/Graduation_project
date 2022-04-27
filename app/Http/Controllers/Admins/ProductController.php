@@ -61,7 +61,7 @@ class ProductController extends Controller
             'image'=> $productImage,
             'price' => $request->price,
             'offer' => $request->offer,
-            'type_of_product' => $request->typeofproduct,
+            'type_of_product' => $request->type_of_product,
             'user_id' => Auth::user()->id,
         ]);
 
@@ -120,7 +120,7 @@ class ProductController extends Controller
             'image'=>$productImage,
             'price'=>$request->price,
             'offer'=>$request->offer,
-            'type_of_product' =>$request->typeofproduct,
+            'type_of_product' =>$request->type_of_product,
 
     ]);
         $typeOfProduct = TypeOfProduct::all();
