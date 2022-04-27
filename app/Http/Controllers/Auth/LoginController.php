@@ -59,6 +59,8 @@ class LoginController extends Controller
             $user->email = $data->email;
             $user->provider_id = $data->id;
             $user->avatar = $data->avatar;
+            $user->role_id = '3';
+            $user->email_verified_at = date("Y-m-d H:i:s");
             $user->save();
 
 
