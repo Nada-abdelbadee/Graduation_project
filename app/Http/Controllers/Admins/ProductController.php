@@ -43,12 +43,12 @@ class ProductController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Requests\StoreProductRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request )
+    public function store(StoreProductRequest $request)
     {
-        // $request->validated();
+        $request->validated();
         $image = $request->file('image');
         $productImage = time().'_'.$image->getClientOriginalName();
 
@@ -61,10 +61,10 @@ class ProductController extends Controller
             'image'=> $productImage,
             'price' => $request->price,
             'offer' => $request->offer,
-            'type_of_product' =>$request->typeofproduct,
+            'type_of_product' => $request->typeofproduct,
             'user_id' => Auth::user()->id,
         ]);
-        return $request;
+
         $typeOfProduct = TypeOfProduct::all();
         $categories = Category::all();
         $allproduct = Product::all();

@@ -60,12 +60,13 @@
                     @endif
                 @else
                     <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle"
+                        <a class="inline nav-link" href="{{route ('addtocart' , Auth::user()->id)}}"><i class="fa-solid fa-cart-shopping me-2"></i> My cart</a>
+                        <a id="navbarDropdown" class="inline nav-link dropdown-toggle"
                             href="{{url('/')}}" role="button" data-bs-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false" v-pre>
                             {{ Auth::user()->name }}
                         </a>
-                        <a class="nav-link" href="{{route ('addtocart' , Auth::user()->id)}}"><i class="fa-solid fa-cart-shopping me-2"></i> My cart</a>
+                        
                         
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{ route('userprofile', Auth::user()->id) }}" >

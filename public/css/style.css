@@ -307,4 +307,8 @@ div legend{
 .num{
     margin-left: 27% ;
 }
+
+.inline {
+    display: inline-block;
+}
 /* end showproduct style */

@@ -13,29 +13,29 @@
         </select>
         <div class="mb-3">
             <input type="file" class="form-control rounded-0 border-dark mt-4 @error('image') is-invalid @enderror" name="image">
-            {{-- @error('image')
+            @error('image')
                 <div class="alert alert-danger">{{ $message }}</div>
-            @enderror --}}
+            @enderror
         </div>
         <div class="mb-3">
             <input type="text" class="form-control rounded-0 border-dark mt-4 @error('name') is-invalid @enderror" placeholder="Product Name.." name="name">
-            {{-- @error('name')
+            @error('name')
                 <div class="alert alert-danger">{{ $message }}</div>
-            @enderror --}}
+            @enderror
         </div>
         <div class="mb-3">
             <input type="integer" class="form-control rounded-0 border-dark mt-4 @error('price') is-invalid @enderror" placeholder="Product cost.." name="price">
-            {{-- @error('price')
+            @error('price')
                 <div class="alert alert-danger">{{ $message }}</div>
-            @enderror --}}
+            @enderror
         </div>
         <div class="mb-3">
             <input type="integer" class="form-control rounded-0 border-dark mt-4 @error('offer') is-invalid @enderror" placeholder="Offer Here.." name="offer">
-            {{-- @error('offer')
+            @error('offer')
                 <div class="alert alert-danger">{{ $message }}</div>
-            @enderror --}}
+            @enderror
         </div>
-        <select class="form-select rounded-0 border-dark mt-4" aria-label="Default select example" name="typeofproduct">
+        <select class="form-select rounded-0 border-dark mt-4" aria-label="Default select example" name="type_of_product">
             <option selected>Type Of Product</option>
             @foreach ($typeOfProduct as $product)
                 <option value="{{ $product->id }}">{{ $product->name }}</option>
