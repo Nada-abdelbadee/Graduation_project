@@ -69,7 +69,7 @@ class ProductController extends Controller
         public function search()
         {
             $search_text = $_GET['query'];
-            $products = Product::where('name' , 'LIKE' , ''.$search_text.'' )->get();
+            $products = Product::where('name' , 'LIKE' , "%$search_text%" )->get();
             return view('search' , compact('products'));
         }
        public function addtocart($id)
