@@ -10,6 +10,12 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
+                        <div class="row mb-3 ">
+                            <div class="col-lg-6 col-md-6 offset-md-3  offset-lg-4 ">
+                                <a href="{{ route ('login.github')}}" class="btn btn-dark btn-block w-100">Login with Github</a>
+                            </div>
+                        </div>
+                        <p class="col-lg-6 col-md-6 offset-md-3  offset-lg-4 text-center">OR</p>
 
                         <div class="row mb-3">
                             <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>

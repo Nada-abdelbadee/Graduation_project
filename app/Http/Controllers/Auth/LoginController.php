@@ -40,13 +40,13 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-    public function redirectToFacebook()
+    public function redirectToGithub()
     {
-        return Socialite::driver('facebook')->redirect();
+        return Socialite::driver('github')->redirect();
     }
-    public function handleFacebookCallback()
+    public function handleGithubCallback()
     {
-        $user = Socialite::driver('facebook')->user();
+        $user = Socialite::driver('github')->user();
         $this-> _registerOrloginuser($user);
         return redirect()->route('home');
     }
@@ -55,7 +55,7 @@ class LoginController extends Controller
         $user = User::where('email' , '=' , $data->email)->first();
         if(!$user){
             $user = new User();
-            $user->name = $data->name;
+            $user->name = substr($data->email, 0, strpos($data->email, '@'));
             $user->email = $data->email;
             $user->provider_id = $data->id;
             $user->avatar = $data->avatar;

@@ -11,11 +11,11 @@
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
                         <div class="row mb-3">
-                            <div class="col-md-6 offset-md-3" style="text-align: center">
-                                <a href="{{ route ('login.facebook')}}" class="btn btn-primary btn-block">Login with facebook</a>
+                            <div class="col-lg-6 col-md-6 offset-md-3  offset-lg-3">
+                                <a href="{{ route ('login.github')}}" class="btn btn-dark btn-block w-100">Login with Github</a>
                             </div>
                         </div>
-                        <p style="text-align: center">OR</p>
+                        <p class="col-lg-6 col-md-6 offset-md-3  offset-lg-3" style="text-align: center">OR</p>
 
                         <div class="row mb-3">
                             <div class="col-md-6 offset-md-3">

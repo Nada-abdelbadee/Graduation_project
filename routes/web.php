@@ -42,8 +42,8 @@ Route::middleware('auth')->prefix('/')->group(function () {
 
 Auth::routes(['verify' => true]);
 
-Route::get('Login/facebook' , [App\Http\Controllers\Auth\LoginController::class , 'redirectToFacebook'])->name('login.facebook');
-Route::get('Login/facebook/callback' , [App\Http\Controllers\Auth\LoginController::class , 'handleFacebookCallback']);
+Route::get('Login/github' , [App\Http\Controllers\Auth\LoginController::class , 'redirectToGithub'])->name('login.github');
+Route::get('Login/github/callback' , [App\Http\Controllers\Auth\LoginController::class , 'handleGithubCallback']);
 
 
 Auth::routes();
