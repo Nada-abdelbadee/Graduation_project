@@ -1,0 +1,310 @@
+:root{
+    --Main-color:#d527b7;
+    --softGrey:#e3e3e3;
+    --grey:#808080;
+    
+}
+/* navbar1 style */
+.nav1{
+    background-color: var(--softGrey);
+}
+/* end navbar1 style */
+/* search navbar style */
+.search{
+    border: 1px solid var(--softGrey);
+    height: 6vh;
+    width: 30%;
+    padding-bottom: .4%;
+    padding-left: 2%;
+}
+.glass{
+    top: 6%;
+    left: 60%;
+    color: var(--grey);
+}
+/* end search navbar style */
+/* navabr fashion style */
+.fashion{
+    background-color: black;
+    color: white;
+}
+.fashion .name{
+    font-size:xx-large;
+    font-family: 'Meddon', cursive;
+}
+.fashion div .icon li a{
+    color: white;
+}
+.fashion div .icon li a:hover{
+    color: var(--Main-color);
+}
+
+/* end navabr fashion style */
+/* slideshow style */
+.header{
+   height: 100vh;
+}
+.header .words{
+    /* top: 20%; */
+    /* bottom: 50%;  */
+    padding: 22px 10px;
+    margin: 36% 20%;
+    border: 1px solid var(--Main-color);
+    background-color: var(--Main-color);
+    opacity: 55%;
+}
+.header .font{
+    font-family: 'Lexend Zetta', sans-serif;
+}
+/* end slideshow style */
+/* Hot collection style */
+.collection{
+    margin-left: 10%;
+}
+.women .hot{
+    color: var(--Main-color);
+    font-family: 'Lexend Zetta', sans-serif;
+}
+.collection .men{
+    margin-left: -6%;
+}
+.collection .men .pho{
+    height: 58vh;
+}
+.collection .button{
+    top: 33%;
+    left: 38%;
+    display: none;
+}
+/* end Hot collection style */
+/* featured & trending items style */
+.feau{
+    width: 90%;
+    margin-left: 5%;
+}
+.bord{
+    border: 1px solid var(--softGrey);
+    background-color: white;
+    width: 70%;
+    height: 10%;
+}
+.featured{
+    margin: 0% -16%;
+    color: var(--grey);
+}
+div legend{
+    padding: 0 6px;
+    margin:auto;
+}
+.items{
+    width: 80%;
+    margin-left: 13.2%;
+
+}
+.items .woman{
+    height: 45vh;
+    width: 17vw;
+}
+.items .item{
+    margin: 0% -2% 0% -0%;
+}
+.items .item .price{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    margin-right: 11.8%;
+    font-size: small;
+}
+.items .item .off{
+    top: 6%;
+    left: 9%;
+    background-color: var(--Main-color);
+    border: 1px solid var(--Main-color);
+}
+.items .item .off p{
+    font-size: small;
+    color: white;
+    margin:1%;
+}
+.item .stars{
+    color: var(--Main-color);
+}
+.item .star{
+    color: var(--grey);
+}
+.shoes{
+    height: 60vh;
+}
+.sho h1{
+    color: var(--Main-color);
+}
+.more{
+    margin-left: 38%;
+}
+.more:hover{
+    background-color: var(--Main-color);
+    border: 1px solid var(--Main-color);
+    color: white;
+}
+.mora:hover{
+    background-color: var(--Main-color);
+    border: 1px solid var(--Main-color);
+    color: white;
+}
+.items .tao{
+    margin-right: 3%;
+}
+.items .na{
+    top: 35%;
+    left: 35%;
+}
+.items .dia{
+    top: 37%;
+    left: 65%;
+}
+.items .dia span{
+    color: var(--Main-color);
+}
+.ceo{
+    width: 15%;
+}
+.sho .ttcm{
+    color: var(--softGrey);
+}
+/* end featured & trending items style */
+/* latest blog style */
+.blog{
+    width: 80%;
+    margin-left: 10%;
+}
+/* end latest blog style */
+/* shop by brand style */
+.hand{
+    width: 95%;
+    /* margin-left: 3%; */
+}
+.by{
+    height: 55vh;
+}
+.shop button{
+    font-size: small;
+    color: var(--grey);
+    margin-left: -6%;
+    padding: 0% 7%;
+}
+.shop p{
+    color: var(--grey);
+}
+.shop .sub{
+    background-color: var(--Main-color);
+    border: 1px solid var(--Main-color);
+    color: white;
+    padding: 4% 35%;
+    margin-left: .75%;
+}
+.font{
+    font-size:x-large;
+    color: var(--grey);
+}
+/* end shop by brand style */
+/* footer style */
+.footer{
+    border: 1px solid black;
+    background-color: black;
+    height: 10vh;
+    width: 100%;
+}
+.footer .foot{
+    margin-left: 67%; 
+    width: 30%; 
+    margin-top: -2%;
+}
+.footer .foot div{
+    color: var(--grey);
+}
+.footer .store{
+    font-size: smaller;
+    color: var(--grey);
+    margin-left: 7%;
+}
+.footer .foot .visa{
+    margin-right: -13%;
+}
+/* end footer style */
+/* start create.blade style */
+.create .sub:hover{
+    border: 1px solid var(--Main-color) !important;
+    background-color: var(--Main-color);
+    color: white;
+}
+/* end create.blade style */
+
+/* start users\all.blade style */
+.tab .show:hover{
+    background-color: var(--Main-color);
+    border: 1px solid var(--Main-color) !important;
+    color: white;
+}
+.tab .del{
+    margin-left: 23%;
+}
+/* end users\all.blade style */
+/* start show.blade style */
+.show span{
+    font-weight: bold;
+}
+/* end show.blade style */
+/* start roles\all.blade style */
+.tab .dele{
+    margin-left: 42%;
+}
+
+/* send roles\all.blade style */
+/* start roles\show.blade style */
+.tab .de{
+    margin-left: 24%;
+}
+
+/* end roles\show.blade style */
+/* start allcategory.blade style */
+.category .price{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    margin-top: 7%;
+    margin-right: 11%;
+    font-size: small;
+}
+.category .woman{
+    height: 38vh;
+    width: 13vw;
+}
+.category .show:hover{
+    background-color: var(--Main-color);
+    border: var(--Main-color);
+    color: white;
+}
+.category .cate{
+    color: var(--grey);
+}
+/* end allcategory.blade style */
+/* start editproduct.blade style */
+.edit .woman{
+    height: 60vh;
+    width: 25vw;
+}
+/* end editproduct.blade style */
+/* start showproduct style */
+.showpro img{
+    height: 60vh;
+    width: 25vw;
+    margin-left: 45%;
+}
+.showit{
+    margin-right: 15%;
+    margin-top: 5%;
+}
+.num{
+    margin-left: 27% ;
+}
+/* end showproduct style */
